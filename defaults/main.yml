@@ -1,0 +1,5 @@
+---
+# defaults file for jorgediz.ansible-mvnvm
+mvn_version: "3.3.9"
+mvnvm_version: "1.0.8"
+mvnvm_tag: mvnvm-{{mvnvm_version}}

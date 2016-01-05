@@ -1,0 +1,10 @@
+---
+# tasks file for jorgediz.ansible-mvnvm
+- name: download mvnvm
+  get_url: >
+   url=https://bitbucket.org/mjensen/mvnvm/raw/{{mvnvm_tag}}/mvn
+   dest=/usr/local/bin/mvn
+
+- name: fix file permissions
+  file: path=/usr/local/bin/mvn mode=0755
+

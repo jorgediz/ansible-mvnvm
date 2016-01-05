@@ -1,0 +1,6 @@
+---
+# vars file for jorgediz.ansible-mvnvm
+- hosts: all
+  sudo: yes
+  roles:
+    - { role: "jorgediz.ansible-mvnvm", mvn_version: "3.3.9" }
